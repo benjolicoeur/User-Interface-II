@@ -1,1 +1,194 @@
 /* Add CSS styling here */
+/* CSS reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Site */
+
+* {
+    font-size: 75%;
+}
+body {
+    font-family: 'Tangerine';
+    font-size: 1rem;
+    text-align:center;
+    color:papayawhip;
+    background-image: url("/images/background.jpg");
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: bottom center;
+}
+h1 {
+    font-family: 'Tangerine', monospace;
+    font-weight: 700;
+    font-size: 4rem;
+}
+h2{
+    font-size:2rem;
+}
+button {
+background-color:whitesmoke;
+color:black;
+padding: 1rem;
+border: 1.5px dashed black;
+font-family: 'Tangerine', monospace;
+font-size:1.25rem;
+}
+button:active {
+    background-color:red;
+    color:white;
+    border: 1px solid whitesmoke;
+}
+header {
+    padding: 20px;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#header-txt {
+padding : 20px 35px 20px 20px;
+}
+#nav-top {
+    height: 2rem;
+    font-size: 1rem;
+    text-align: right;
+    margin: 2rem;
+    width:45%;
+}
+#nav-top a {
+    border: 1px solid black;
+    padding: .5rem;
+    color: black;
+    margin-left: .75rem;
+    text-decoration: none;
+    background-color: white;
+}
+#nav-top a:hover {
+    background-color: black;
+    color: whitesmoke;
+    border: 1px dashed white;
+    text-decoration: none;
+}
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 3rem;
+    margin-right: 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+footer button {
+    margin: 2rem;
+}
+footer a {
+    color: whitesmoke
+}
+footer a:hover {
+    color:black;
+}
+#links {
+    line-height: 1.5rem;
+}
+
+#about {
+    padding:1.75rem;
+    border-radius: 50px;
+    background: rgba(red, green, blue, alpha);
+    width: 60%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#about-img {
+    flex:35%;
+    margin: auto;
+}
+#about-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#about-txt {
+    flex: 50%;
+    margin: auto;
+    font-size: 1.25rem;
+}
+#about-txt p {
+    line-height: 1.50rem;
+}
+#about button {
+    margin: 2rem;
+}
+#gallery {
+    display:flex;
+    flex-flow: row wrap;
+    width: 85%;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.gallery-img {
+    max-width: 400px;
+    margin-top: 2rem;
+    margin: .5rem;
+    height: auto;
+    border: solid .25rem black;
+}
+.gallery-img:hover {
+    border: solid .25rem whitesmoke;
+}
